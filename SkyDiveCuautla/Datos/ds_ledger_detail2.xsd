@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_ledger_detail2" targetNamespace="http://tempuri.org/ds_ledger_detail2.xsd" xmlns:mstns="http://tempuri.org/ds_ledger_detail2.xsd" xmlns="http://tempuri.org/ds_ledger_detail2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bd_skydivecuautlaConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bd_skydivecuautlaConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SkyDiveCuautla.Properties.Settings.GlobalReference.Default.bd_skydivecuautlaConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_ledger_detail2TableAdapter" GeneratorDataComponentClassName="v_ledger_detail2TableAdapter" Name="v_ledger_detail2" UserDataComponentName="v_ledger_detail2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_skydivecuautlaConnectionString2 (Settings)" DbObjectName="bd_skydivecuautla.dbo.v_ledger_detail2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT code_payment_type, payment, idusuario FROM dbo.v_ledger_detail2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="code_payment_type" DataSetColumn="code_payment_type" />
+              <Mapping SourceColumn="payment" DataSetColumn="payment" />
+              <Mapping SourceColumn="idusuario" DataSetColumn="idusuario" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_ledger_detail2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_ledger_detail2" msprop:Generator_UserDSName="ds_ledger_detail2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_ledger_detail2" msprop:Generator_TableClassName="v_ledger_detail2DataTable" msprop:Generator_TableVarName="tablev_ledger_detail2" msprop:Generator_TablePropName="v_ledger_detail2" msprop:Generator_RowDeletingName="v_ledger_detail2RowDeleting" msprop:Generator_RowChangingName="v_ledger_detail2RowChanging" msprop:Generator_RowEvHandlerName="v_ledger_detail2RowChangeEventHandler" msprop:Generator_RowDeletedName="v_ledger_detail2RowDeleted" msprop:Generator_UserTableName="v_ledger_detail2" msprop:Generator_RowChangedName="v_ledger_detail2RowChanged" msprop:Generator_RowEvArgName="v_ledger_detail2RowChangeEvent" msprop:Generator_RowClassName="v_ledger_detail2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code_payment_type" msprop:Generator_ColumnVarNameInTable="columncode_payment_type" msprop:Generator_ColumnPropNameInRow="code_payment_type" msprop:Generator_ColumnPropNameInTable="code_payment_typeColumn" msprop:Generator_UserColumnName="code_payment_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="payment" msprop:Generator_ColumnVarNameInTable="columnpayment" msprop:Generator_ColumnPropNameInRow="payment" msprop:Generator_ColumnPropNameInTable="paymentColumn" msprop:Generator_UserColumnName="payment" type="xs:decimal" minOccurs="0" />
+              <xs:element name="idusuario" msprop:Generator_ColumnVarNameInTable="columnidusuario" msprop:Generator_ColumnPropNameInRow="idusuario" msprop:Generator_ColumnPropNameInTable="idusuarioColumn" msprop:Generator_UserColumnName="idusuario" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

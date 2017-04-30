@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_reserva" targetNamespace="http://tempuri.org/ds_reserva.xsd" xmlns:mstns="http://tempuri.org/ds_reserva.xsd" xmlns="http://tempuri.org/ds_reserva.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bd_skydivecuautlaConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bd_skydivecuautlaConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SkyDiveCuautla.Properties.Settings.GlobalReference.Default.bd_skydivecuautlaConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_reservaTableAdapter" GeneratorDataComponentClassName="v_reservaTableAdapter" Name="v_reserva" UserDataComponentName="v_reservaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_skydivecuautlaConnectionString1 (Settings)" DbObjectName="bd_skydivecuautla.dbo.v_reserva" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT horario, fecha_salto, code, fecha_reserva, name, telefono, telefono2, celular, deposito, metodo, tandem, videos, confirmacion FROM dbo.v_reserva</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="horario" DataSetColumn="horario" />
+              <Mapping SourceColumn="fecha_salto" DataSetColumn="fecha_salto" />
+              <Mapping SourceColumn="code" DataSetColumn="code" />
+              <Mapping SourceColumn="fecha_reserva" DataSetColumn="fecha_reserva" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="telefono" DataSetColumn="telefono" />
+              <Mapping SourceColumn="telefono2" DataSetColumn="telefono2" />
+              <Mapping SourceColumn="celular" DataSetColumn="celular" />
+              <Mapping SourceColumn="deposito" DataSetColumn="deposito" />
+              <Mapping SourceColumn="metodo" DataSetColumn="metodo" />
+              <Mapping SourceColumn="tandem" DataSetColumn="tandem" />
+              <Mapping SourceColumn="videos" DataSetColumn="videos" />
+              <Mapping SourceColumn="confirmacion" DataSetColumn="confirmacion" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_reserva" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_reserva" msprop:Generator_UserDSName="ds_reserva">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_reserva" msprop:Generator_TableClassName="v_reservaDataTable" msprop:Generator_TableVarName="tablev_reserva" msprop:Generator_TablePropName="v_reserva" msprop:Generator_RowDeletingName="v_reservaRowDeleting" msprop:Generator_RowChangingName="v_reservaRowChanging" msprop:Generator_RowEvHandlerName="v_reservaRowChangeEventHandler" msprop:Generator_RowDeletedName="v_reservaRowDeleted" msprop:Generator_UserTableName="v_reserva" msprop:Generator_RowChangedName="v_reservaRowChanged" msprop:Generator_RowEvArgName="v_reservaRowChangeEvent" msprop:Generator_RowClassName="v_reservaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="horario" msprop:Generator_ColumnVarNameInTable="columnhorario" msprop:Generator_ColumnPropNameInRow="horario" msprop:Generator_ColumnPropNameInTable="horarioColumn" msprop:Generator_UserColumnName="horario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_salto" msprop:Generator_ColumnVarNameInTable="columnfecha_salto" msprop:Generator_ColumnPropNameInRow="fecha_salto" msprop:Generator_ColumnPropNameInTable="fecha_saltoColumn" msprop:Generator_UserColumnName="fecha_salto" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_reserva" msprop:Generator_ColumnVarNameInTable="columnfecha_reserva" msprop:Generator_ColumnPropNameInRow="fecha_reserva" msprop:Generator_ColumnPropNameInTable="fecha_reservaColumn" msprop:Generator_UserColumnName="fecha_reserva" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="name" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="201" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" msprop:Generator_UserColumnName="telefono" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefono2" msprop:Generator_ColumnVarNameInTable="columntelefono2" msprop:Generator_ColumnPropNameInRow="telefono2" msprop:Generator_ColumnPropNameInTable="telefono2Column" msprop:Generator_UserColumnName="telefono2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="celular" msprop:Generator_ColumnVarNameInTable="columncelular" msprop:Generator_ColumnPropNameInRow="celular" msprop:Generator_ColumnPropNameInTable="celularColumn" msprop:Generator_UserColumnName="celular" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deposito" msprop:Generator_ColumnVarNameInTable="columndeposito" msprop:Generator_ColumnPropNameInRow="deposito" msprop:Generator_ColumnPropNameInTable="depositoColumn" msprop:Generator_UserColumnName="deposito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="metodo" msprop:Generator_ColumnVarNameInTable="columnmetodo" msprop:Generator_ColumnPropNameInRow="metodo" msprop:Generator_ColumnPropNameInTable="metodoColumn" msprop:Generator_UserColumnName="metodo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tandem" msprop:Generator_ColumnVarNameInTable="columntandem" msprop:Generator_ColumnPropNameInRow="tandem" msprop:Generator_ColumnPropNameInTable="tandemColumn" msprop:Generator_UserColumnName="tandem" type="xs:int" minOccurs="0" />
+              <xs:element name="videos" msprop:Generator_ColumnVarNameInTable="columnvideos" msprop:Generator_ColumnPropNameInRow="videos" msprop:Generator_ColumnPropNameInTable="videosColumn" msprop:Generator_UserColumnName="videos" type="xs:int" minOccurs="0" />
+              <xs:element name="confirmacion" msprop:Generator_ColumnVarNameInTable="columnconfirmacion" msprop:Generator_ColumnPropNameInRow="confirmacion" msprop:Generator_ColumnPropNameInTable="confirmacionColumn" msprop:Generator_UserColumnName="confirmacion" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

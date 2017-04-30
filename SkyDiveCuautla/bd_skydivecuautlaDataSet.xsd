@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bd_skydivecuautlaDataSet" targetNamespace="http://tempuri.org/bd_skydivecuautlaDataSet.xsd" xmlns:mstns="http://tempuri.org/bd_skydivecuautlaDataSet.xsd" xmlns="http://tempuri.org/bd_skydivecuautlaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bd_skydivecuautla_cs" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bd_skydivecuautla_cs (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SkyDiveCuautla.Properties.Settings.GlobalReference.Default.bd_skydivecuautla_cs" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_diver_fly_detailTableAdapter" GeneratorDataComponentClassName="v_diver_fly_detailTableAdapter" Name="v_diver_fly_detail" UserDataComponentName="v_diver_fly_detailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_skydivecuautla_cs (Settings)" DbObjectName="bd_skydivecuautla.dbo.v_diver_fly_detail" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idoficina, matricula, piloto, fecha, numerovuelo, Ocupantes, nombre FROM dbo.v_diver_fly_detail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idoficina" DataSetColumn="idoficina" />
+              <Mapping SourceColumn="matricula" DataSetColumn="matricula" />
+              <Mapping SourceColumn="piloto" DataSetColumn="piloto" />
+              <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
+              <Mapping SourceColumn="numerovuelo" DataSetColumn="numerovuelo" />
+              <Mapping SourceColumn="Ocupantes" DataSetColumn="Ocupantes" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bd_skydivecuautlaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bd_skydivecuautlaDataSet" msprop:Generator_UserDSName="bd_skydivecuautlaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_diver_fly_detail" msprop:Generator_TableClassName="v_diver_fly_detailDataTable" msprop:Generator_TableVarName="tablev_diver_fly_detail" msprop:Generator_TablePropName="v_diver_fly_detail" msprop:Generator_RowDeletingName="v_diver_fly_detailRowDeleting" msprop:Generator_RowChangingName="v_diver_fly_detailRowChanging" msprop:Generator_RowEvHandlerName="v_diver_fly_detailRowChangeEventHandler" msprop:Generator_RowDeletedName="v_diver_fly_detailRowDeleted" msprop:Generator_UserTableName="v_diver_fly_detail" msprop:Generator_RowChangedName="v_diver_fly_detailRowChanged" msprop:Generator_RowEvArgName="v_diver_fly_detailRowChangeEvent" msprop:Generator_RowClassName="v_diver_fly_detailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idoficina" msprop:Generator_ColumnVarNameInTable="columnidoficina" msprop:Generator_ColumnPropNameInRow="idoficina" msprop:Generator_ColumnPropNameInTable="idoficinaColumn" msprop:Generator_UserColumnName="idoficina" type="xs:int" />
+              <xs:element name="matricula" msprop:Generator_ColumnVarNameInTable="columnmatricula" msprop:Generator_ColumnPropNameInRow="matricula" msprop:Generator_ColumnPropNameInTable="matriculaColumn" msprop:Generator_UserColumnName="matricula">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="piloto" msprop:Generator_ColumnVarNameInTable="columnpiloto" msprop:Generator_ColumnPropNameInRow="piloto" msprop:Generator_ColumnPropNameInTable="pilotoColumn" msprop:Generator_UserColumnName="piloto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numerovuelo" msprop:Generator_ColumnVarNameInTable="columnnumerovuelo" msprop:Generator_ColumnPropNameInRow="numerovuelo" msprop:Generator_ColumnPropNameInTable="numerovueloColumn" msprop:Generator_UserColumnName="numerovuelo" type="xs:int" />
+              <xs:element name="Ocupantes" msprop:Generator_ColumnVarNameInTable="columnOcupantes" msprop:Generator_ColumnPropNameInRow="Ocupantes" msprop:Generator_ColumnPropNameInTable="OcupantesColumn" msprop:Generator_UserColumnName="Ocupantes" type="xs:int" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="201" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

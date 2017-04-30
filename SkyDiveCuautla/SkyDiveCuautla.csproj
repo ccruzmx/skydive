@@ -1,0 +1,1157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48F3ED7A-7811-4997-BCB0-E4F0E8DF767C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SkyDiveCuautla</RootNamespace>
+    <AssemblyName>SkyDiveCuautla</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>ftp://wht.mx/skydivecuautla/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SkyDiveCuautla.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>263684505884FD3BBCC4FA9D24AD1009BB08F62D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SkyDiveCuautla_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WinForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceso.Designer.cs">
+      <DependentUpon>acceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bd_skydivecuautlaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_skydivecuautlaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_skydivecuautlaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_skydivecuautlaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BXLLIB.cs" />
+    <Compile Include="Catalogos\Frm_Aditional_Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Aditional_Services.Designer.cs">
+      <DependentUpon>Frm_Aditional_Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Charge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Charge.Designer.cs">
+      <DependentUpon>Frm_Charge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Cities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Cities.Designer.cs">
+      <DependentUpon>Frm_Cities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Jump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Jump.Designer.cs">
+      <DependentUpon>Frm_Jump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Jumper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Jumper.Designer.cs">
+      <DependentUpon>Frm_Jumper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_offices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_offices.Designer.cs">
+      <DependentUpon>Frm_offices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Payment.Designer.cs">
+      <DependentUpon>Frm_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Pilots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Pilots.Designer.cs">
+      <DependentUpon>Frm_Pilots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Planes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Planes.Designer.cs">
+      <DependentUpon>Frm_Planes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Preferences.Designer.cs">
+      <DependentUpon>Frm_Preferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Profiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Profiles.Designer.cs">
+      <DependentUpon>Frm_Profiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Source.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Source.Designer.cs">
+      <DependentUpon>Frm_Source.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Status.Designer.cs">
+      <DependentUpon>Frm_Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Frm_Users.Designer.cs">
+      <DependentUpon>Frm_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\manifiesto.cs" />
+    <Compile Include="Clases\Timers.cs" />
+    <Compile Include="ConectaBD.cs" />
+    <Compile Include="Datos\ds_charges_summary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_charges_summary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_diver_fly_detail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_diver_fly_detail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_diver_fly_resume.cs">
+      <DependentUpon>ds_diver_fly_resume.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datos\ds_diver_fly_resume.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_diver_fly_resume.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_flight_detail.cs">
+      <DependentUpon>ds_flight_detail.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datos\ds_flight_detail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_flight_detail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_historyjumper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_historyjumper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_jumperdue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_jumperdue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_jumper_exceptions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_jumper_exceptions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_ledger_detail2.cs">
+      <DependentUpon>ds_ledger_detail2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datos\ds_ledger_detail2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_ledger_detail2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_manifiesto.cs">
+      <DependentUpon>ds_manifiesto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datos\ds_manifiesto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_manifiesto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_reserva.cs">
+      <DependentUpon>ds_reserva.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datos\ds_reserva.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_reserva.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_tandemupdue.cs">
+      <DependentUpon>ds_tandemupdue.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datos\ds_tandemupdue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_tandemupdue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ds_tandem_certificated.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_tandem_certificated.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_bixolon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_bixolon.designer.cs">
+      <DependentUpon>Frm_bixolon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDISkyDiveCuautla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDISkyDiveCuautla.Designer.cs">
+      <DependentUpon>MDISkyDiveCuautla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_AddPreManifest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_AddPreManifest.Designer.cs">
+      <DependentUpon>Frm_AddPreManifest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_ElegirTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_ElegirTicket.Designer.cs">
+      <DependentUpon>Frm_ElegirTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Instructors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Instructors.Designer.cs">
+      <DependentUpon>Frm_Instructors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Instructors_blackboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Instructors_blackboard.Designer.cs">
+      <DependentUpon>Frm_Instructors_blackboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Itinerary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Itinerary.Designer.cs">
+      <DependentUpon>Frm_Itinerary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperLeaderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperLeaderDetail.Designer.cs">
+      <DependentUpon>Frm_JumperLeaderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperList.Designer.cs">
+      <DependentUpon>Frm_JumperList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jumpers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jumpers.Designer.cs">
+      <DependentUpon>Frm_Jumpers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperSelection.Designer.cs">
+      <DependentUpon>Frm_JumperSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperTransactionEntires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_JumperTransactionEntires.Designer.cs">
+      <DependentUpon>Frm_JumperTransactionEntires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jumper_Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jumper_Preferences.Designer.cs">
+      <DependentUpon>Frm_Jumper_Preferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jumper_Ratings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jumper_Ratings.Designer.cs">
+      <DependentUpon>Frm_Jumper_Ratings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jump_Exceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Jump_Exceptions.Designer.cs">
+      <DependentUpon>Frm_Jump_Exceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Ledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Ledger.Designer.cs">
+      <DependentUpon>Frm_Ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_LoadReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_LoadReservations.Designer.cs">
+      <DependentUpon>Frm_LoadReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_LoadReserva_access.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_LoadReserva_access.Designer.cs">
+      <DependentUpon>Frm_LoadReserva_access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_LoadReserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_LoadReserve.Designer.cs">
+      <DependentUpon>Frm_LoadReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Manifiest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Manifiest.Designer.cs">
+      <DependentUpon>Frm_Manifiest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_ManifiestJumpers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_ManifiestJumpers.Designer.cs">
+      <DependentUpon>Frm_ManifiestJumpers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Modify_Manifest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Modify_Manifest.Designer.cs">
+      <DependentUpon>Frm_Modify_Manifest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_PaidBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_PaidBy.Designer.cs">
+      <DependentUpon>Frm_PaidBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Payment_Breakdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Payment_Breakdown.Designer.cs">
+      <DependentUpon>Frm_Payment_Breakdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_PreferenceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_PreferenceReport.Designer.cs">
+      <DependentUpon>Frm_PreferenceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_PreManifest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_PreManifest.Designer.cs">
+      <DependentUpon>Frm_PreManifest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Processing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Processing.Designer.cs">
+      <DependentUpon>Frm_Processing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Prospect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Prospect.Designer.cs">
+      <DependentUpon>Frm_Prospect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_ProspectSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_ProspectSelection.Designer.cs">
+      <DependentUpon>Frm_ProspectSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reports.Designer.cs">
+      <DependentUpon>Frm_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reserva.Designer.cs">
+      <DependentUpon>Frm_Reserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reserva_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reserva_detail.Designer.cs">
+      <DependentUpon>Frm_Reserva_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reserve_TandemUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Reserve_TandemUp.Designer.cs">
+      <DependentUpon>Frm_Reserve_TandemUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_RUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_RUD.Designer.cs">
+      <DependentUpon>Frm_RUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_SistemaControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_SistemaControl.Designer.cs">
+      <DependentUpon>Frm_SistemaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_TandemSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_TandemSelection.Designer.cs">
+      <DependentUpon>Frm_TandemSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Tandemup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Tandemup.Designer.cs">
+      <DependentUpon>Frm_Tandemup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_TandemupDip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_TandemupDip.Designer.cs">
+      <DependentUpon>Frm_TandemupDip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_TandemupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_TandemupList.Designer.cs">
+      <DependentUpon>Frm_TandemupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_Teams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_Teams.Designer.cs">
+      <DependentUpon>Frm_Teams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_ticket.Designer.cs">
+      <DependentUpon>Frm_ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Frm_vtavideos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Frm_vtavideos.Designer.cs">
+      <DependentUpon>Frm_vtavideos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\Identity_card_jumper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\Identity_card_jumper.Designer.cs">
+      <DependentUpon>Identity_card_jumper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion\RegistryFromTandemUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacion\RegistryFromTandemUp.Designer.cs">
+      <DependentUpon>RegistryFromTandemUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\Frm_Charges_Per_Flight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Charges_Per_Flight.Designer.cs">
+      <DependentUpon>Frm_Charges_Per_Flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Charges_Sumary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Charges_Sumary.Designer.cs">
+      <DependentUpon>Frm_Charges_Sumary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Daily_Leadger_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Daily_Leadger_Detail.Designer.cs">
+      <DependentUpon>Frm_Daily_Leadger_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Daily_Leadger_Sumary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Daily_Leadger_Sumary.Designer.cs">
+      <DependentUpon>Frm_Daily_Leadger_Sumary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_diver_fly_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_diver_fly_detail.Designer.cs">
+      <DependentUpon>Frm_diver_fly_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_diver_fly_resume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_diver_fly_resume.Designer.cs">
+      <DependentUpon>Frm_diver_fly_resume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Dropzone_Sumary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Dropzone_Sumary.Designer.cs">
+      <DependentUpon>Frm_Dropzone_Sumary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_FiltroReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_FiltroReportes.Designer.cs">
+      <DependentUpon>Frm_FiltroReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Flights_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Flights_Detail.Designer.cs">
+      <DependentUpon>Frm_Flights_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_HistoryJumper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_HistoryJumper.Designer.cs">
+      <DependentUpon>Frm_HistoryJumper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_HistoryJumper_resume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_HistoryJumper_resume.Designer.cs">
+      <DependentUpon>Frm_HistoryJumper_resume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Jumper_Due.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Jumper_Due.Designer.cs">
+      <DependentUpon>Frm_Jumper_Due.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Jump_Exceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Jump_Exceptions.Designer.cs">
+      <DependentUpon>Frm_Jump_Exceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Manifiesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Manifiesto.Designer.cs">
+      <DependentUpon>Frm_Manifiesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Reservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Reservaciones.Designer.cs">
+      <DependentUpon>Frm_Reservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Tandem_Due.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Tandem_Due.Designer.cs">
+      <DependentUpon>Frm_Tandem_Due.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservaciones\Frm_MenuReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservaciones\Frm_MenuReservas.Designer.cs">
+      <DependentUpon>Frm_MenuReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utilerias.cs" />
+    <EmbeddedResource Include="acceso.resx">
+      <DependentUpon>acceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Aditional_Services.resx">
+      <DependentUpon>Frm_Aditional_Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Charge.resx">
+      <DependentUpon>Frm_Charge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Cities.resx">
+      <DependentUpon>Frm_Cities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Jump.resx">
+      <DependentUpon>Frm_Jump.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Jumper.resx">
+      <DependentUpon>Frm_Jumper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_offices.resx">
+      <DependentUpon>Frm_offices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Payment.resx">
+      <DependentUpon>Frm_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Pilots.resx">
+      <DependentUpon>Frm_Pilots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Planes.resx">
+      <DependentUpon>Frm_Planes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Preferences.resx">
+      <DependentUpon>Frm_Preferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Profiles.resx">
+      <DependentUpon>Frm_Profiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Source.resx">
+      <DependentUpon>Frm_Source.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Status.resx">
+      <DependentUpon>Frm_Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\Frm_Users.resx">
+      <DependentUpon>Frm_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_bixolon.resx">
+      <DependentUpon>Frm_bixolon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDISkyDiveCuautla.resx">
+      <DependentUpon>MDISkyDiveCuautla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_AddPreManifest.resx">
+      <DependentUpon>Frm_AddPreManifest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_ElegirTicket.resx">
+      <DependentUpon>Frm_ElegirTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Instructors.resx">
+      <DependentUpon>Frm_Instructors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Instructors_blackboard.resx">
+      <DependentUpon>Frm_Instructors_blackboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Itinerary.resx">
+      <DependentUpon>Frm_Itinerary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_JumperLeaderDetail.resx">
+      <DependentUpon>Frm_JumperLeaderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_JumperList.resx">
+      <DependentUpon>Frm_JumperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Jumpers.resx">
+      <DependentUpon>Frm_Jumpers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_JumperSelection.resx">
+      <DependentUpon>Frm_JumperSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_JumperTransactionEntires.resx">
+      <DependentUpon>Frm_JumperTransactionEntires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Jumper_Preferences.resx">
+      <DependentUpon>Frm_Jumper_Preferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Jumper_Ratings.resx">
+      <DependentUpon>Frm_Jumper_Ratings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Jump_Exceptions.resx">
+      <DependentUpon>Frm_Jump_Exceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Ledger.resx">
+      <DependentUpon>Frm_Ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_LoadReservations.resx">
+      <DependentUpon>Frm_LoadReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_LoadReserva_access.resx">
+      <DependentUpon>Frm_LoadReserva_access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_LoadReserve.resx">
+      <DependentUpon>Frm_LoadReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Manifiest.resx">
+      <DependentUpon>Frm_Manifiest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_ManifiestJumpers.resx">
+      <DependentUpon>Frm_ManifiestJumpers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Modify_Manifest.resx">
+      <DependentUpon>Frm_Modify_Manifest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_PaidBy.resx">
+      <DependentUpon>Frm_PaidBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Payment_Breakdown.resx">
+      <DependentUpon>Frm_Payment_Breakdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_PreferenceReport.resx">
+      <DependentUpon>Frm_PreferenceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_PreManifest.resx">
+      <DependentUpon>Frm_PreManifest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Processing.resx">
+      <DependentUpon>Frm_Processing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Prospect.resx">
+      <DependentUpon>Frm_Prospect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_ProspectSelection.resx">
+      <DependentUpon>Frm_ProspectSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Reports.resx">
+      <DependentUpon>Frm_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Reserva.resx">
+      <DependentUpon>Frm_Reserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Reserva_detail.resx">
+      <DependentUpon>Frm_Reserva_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Reserve_TandemUp.resx">
+      <DependentUpon>Frm_Reserve_TandemUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_RUD.resx">
+      <DependentUpon>Frm_RUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_SistemaControl.resx">
+      <DependentUpon>Frm_SistemaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_TandemSelection.resx">
+      <DependentUpon>Frm_TandemSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Tandemup.resx">
+      <DependentUpon>Frm_Tandemup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_TandemupDip.resx">
+      <DependentUpon>Frm_TandemupDip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_TandemupList.resx">
+      <DependentUpon>Frm_TandemupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_Teams.resx">
+      <DependentUpon>Frm_Teams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_ticket.resx">
+      <DependentUpon>Frm_ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Frm_vtavideos.resx">
+      <DependentUpon>Frm_vtavideos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\Identity_card_jumper.resx">
+      <DependentUpon>Identity_card_jumper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacion\RegistryFromTandemUp.resx">
+      <DependentUpon>RegistryFromTandemUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\Frm_Charges_Per_Flight.resx">
+      <DependentUpon>Frm_Charges_Per_Flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Charges_Sumary.resx">
+      <DependentUpon>Frm_Charges_Sumary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Daily_Leadger_Detail.resx">
+      <DependentUpon>Frm_Daily_Leadger_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Daily_Leadger_Sumary.resx">
+      <DependentUpon>Frm_Daily_Leadger_Sumary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_diver_fly_detail.resx">
+      <DependentUpon>Frm_diver_fly_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_diver_fly_resume.resx">
+      <DependentUpon>Frm_diver_fly_resume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Dropzone_Sumary.resx">
+      <DependentUpon>Frm_Dropzone_Sumary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_FiltroReportes.resx">
+      <DependentUpon>Frm_FiltroReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Flights_Detail.resx">
+      <DependentUpon>Frm_Flights_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_HistoryJumper.resx">
+      <DependentUpon>Frm_HistoryJumper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_HistoryJumper_resume.resx">
+      <DependentUpon>Frm_HistoryJumper_resume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Jumper_Due.resx">
+      <DependentUpon>Frm_Jumper_Due.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Jump_Exceptions.resx">
+      <DependentUpon>Frm_Jump_Exceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Manifiesto.resx">
+      <DependentUpon>Frm_Manifiesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Reservaciones.resx">
+      <DependentUpon>Frm_Reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Tandem_Due.resx">
+      <DependentUpon>Frm_Tandem_Due.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_charges_summary.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_diver_fly_detail.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_diver_fly_resume.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_dropzone_summary.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_flight_detail.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_History_Jumper.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_History_Jumper_resume.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Jumper_Due.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_jumper_exception.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_ledger_detail.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_manifiesto.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Reservaciones.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Reservaciones_cuautla.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Reservaciones_puebla.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Reservaciones_puertoescondido.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_TandemCertificate.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Tandem_Due.rdlc" />
+    <EmbeddedResource Include="Reservaciones\Frm_MenuReservas.resx">
+      <DependentUpon>Frm_MenuReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bd_skydivecuautlaDataSet.xsc">
+      <DependentUpon>bd_skydivecuautlaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bd_skydivecuautlaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_skydivecuautlaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_skydivecuautlaDataSet.xss">
+      <DependentUpon>bd_skydivecuautlaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bd_skydivecuautlaDataSet1.xsc">
+      <DependentUpon>bd_skydivecuautlaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bd_skydivecuautlaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_skydivecuautlaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_skydivecuautlaDataSet1.xss">
+      <DependentUpon>bd_skydivecuautlaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_charges_summary.xsc">
+      <DependentUpon>ds_charges_summary.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_charges_summary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_charges_summary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_charges_summary.xss">
+      <DependentUpon>ds_charges_summary.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_diver_fly_detail.xsc">
+      <DependentUpon>ds_diver_fly_detail.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_diver_fly_detail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_diver_fly_detail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_diver_fly_detail.xss">
+      <DependentUpon>ds_diver_fly_detail.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_diver_fly_resume.xsc">
+      <DependentUpon>ds_diver_fly_resume.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_diver_fly_resume.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_diver_fly_resume.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_diver_fly_resume.xss">
+      <DependentUpon>ds_diver_fly_resume.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_flight_detail.xsc">
+      <DependentUpon>ds_flight_detail.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_flight_detail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_flight_detail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_flight_detail.xss">
+      <DependentUpon>ds_flight_detail.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_historyjumper.xsc">
+      <DependentUpon>ds_historyjumper.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_historyjumper.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_historyjumper.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datos\ds_historyjumper.xss">
+      <DependentUpon>ds_historyjumper.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_jumperdue.xsc">
+      <DependentUpon>ds_jumperdue.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_jumperdue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_jumperdue.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_jumperdue.xss">
+      <DependentUpon>ds_jumperdue.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_jumper_exceptions.xsc">
+      <DependentUpon>ds_jumper_exceptions.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_jumper_exceptions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_jumper_exceptions.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_jumper_exceptions.xss">
+      <DependentUpon>ds_jumper_exceptions.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_ledger_detail2.xsc">
+      <DependentUpon>ds_ledger_detail2.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_ledger_detail2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_ledger_detail2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_ledger_detail2.xss">
+      <DependentUpon>ds_ledger_detail2.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_manifiesto.xsc">
+      <DependentUpon>ds_manifiesto.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_manifiesto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_manifiesto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_manifiesto.xss">
+      <DependentUpon>ds_manifiesto.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_reserva.xsc">
+      <DependentUpon>ds_reserva.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_reserva.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_reserva.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_reserva.xss">
+      <DependentUpon>ds_reserva.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_tandemupdue.xsc">
+      <DependentUpon>ds_tandemupdue.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_tandemupdue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_tandemupdue.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_tandemupdue.xss">
+      <DependentUpon>ds_tandemupdue.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_tandem_certificated.xsc">
+      <DependentUpon>ds_tandem_certificated.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\ds_tandem_certificated.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_tandem_certificated.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\ds_tandem_certificated.xss">
+      <DependentUpon>ds_tandem_certificated.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SkyDiveCuautla_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagen\Add.jpg" />
+    <Content Include="imagen\airplane.jpg" />
+    <Content Include="imagen\ajax-loader.gif" />
+    <Content Include="imagen\BackupDB.png" />
+    <Content Include="imagen\bg-home.jpg" />
+    <Content Include="imagen\clean.png" />
+    <Content Include="imagen\database-refresh.png" />
+    <Content Include="imagen\databasebackup.png" />
+    <Content Include="imagen\databaserestore.png" />
+    <Content Include="imagen\database_process.png" />
+    <None Include="imagen\Unlock.ico" />
+    <None Include="imagen\login.png" />
+    <None Include="imagen\login2.png" />
+    <None Include="imagen\Document.ico" />
+    <None Include="imagen\Lock.ico" />
+    <None Include="imagen\Gold Coin - Stacks.png" />
+    <None Include="imagen\Floppy.ico" />
+    <None Include="imagen\Edit_Yes.ico" />
+    <Content Include="imagen\logo_cuautla.jpg" />
+    <Content Include="imagen\logo_puebla.jpg" />
+    <Content Include="imagen\logo_puertoescondido.jpg" />
+    <None Include="imagen\Printer.ico" />
+    <Content Include="imagen\profile.jpg" />
+    <None Include="imagen\reporte.jpg" />
+    <None Include="imagen\search.png" />
+    <Content Include="imagen\switch.jpg" />
+    <None Include="imagen\closewindow.png" />
+    <Content Include="imagen\document_add.png" />
+    <Content Include="imagen\Exit.png" />
+    <Content Include="imagen\find.png" />
+    <Content Include="imagen\footer-logo.png" />
+    <None Include="imagen\Itinerary.png" />
+    <Content Include="imagen\logout.png" />
+    <Content Include="imagen\logowht.png" />
+    <Content Include="imagen\manifest.jpg" />
+    <Content Include="imagen\on.jpg" />
+    <Content Include="imagen\parachute.jpg" />
+    <Content Include="imagen\parachute_green.png" />
+    <Content Include="imagen\parachute_red.png" />
+    <Content Include="imagen\parachute_silver.png" />
+    <Content Include="imagen\parachute_yellow.png" />
+    <None Include="imagen\project-flight.png" />
+    <None Include="imagen\refresh.png" />
+    <Content Include="imagen\save.png" />
+    <None Include="imagen\switch2.jpg" />
+    <None Include="imagen\online.jpg" />
+    <None Include="imagen\offline.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

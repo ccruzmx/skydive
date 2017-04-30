@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_Charges_Summary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grupo" type="xs:string" minOccurs="0" />
+              <xs:element name="charge_type" type="xs:string" minOccurs="0" />
+              <xs:element name="CHARGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREDIT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

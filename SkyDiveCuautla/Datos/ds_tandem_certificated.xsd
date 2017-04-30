@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_tandem_certificated" targetNamespace="http://tempuri.org/ds_tandem_certificated.xsd" xmlns:mstns="http://tempuri.org/ds_tandem_certificated.xsd" xmlns="http://tempuri.org/ds_tandem_certificated.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bd_skydivecuautla_cs" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bd_skydivecuautla_cs (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SkyDiveCuautla.Properties.Settings.GlobalReference.Default.bd_skydivecuautla_cs" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_tandem_certificateTableAdapter" GeneratorDataComponentClassName="v_tandem_certificateTableAdapter" Name="v_tandem_certificate" UserDataComponentName="v_tandem_certificateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_skydivecuautla_cs (Settings)" DbObjectName="bd_skydivecuautla.dbo.v_tandem_certificate" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idtandem, lastname, tandemup, idjumper, instructor, codegroup FROM dbo.v_tandem_certificate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idtandem" DataSetColumn="idtandem" />
+              <Mapping SourceColumn="lastname" DataSetColumn="lastname" />
+              <Mapping SourceColumn="tandemup" DataSetColumn="tandemup" />
+              <Mapping SourceColumn="idjumper" DataSetColumn="idjumper" />
+              <Mapping SourceColumn="instructor" DataSetColumn="instructor" />
+              <Mapping SourceColumn="codegroup" DataSetColumn="codegroup" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_tandem_certificated" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_tandem_certificated" msprop:Generator_UserDSName="ds_tandem_certificated">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_tandem_certificate" msprop:Generator_TableClassName="v_tandem_certificateDataTable" msprop:Generator_TableVarName="tablev_tandem_certificate" msprop:Generator_TablePropName="v_tandem_certificate" msprop:Generator_RowDeletingName="v_tandem_certificateRowDeleting" msprop:Generator_RowChangingName="v_tandem_certificateRowChanging" msprop:Generator_RowEvHandlerName="v_tandem_certificateRowChangeEventHandler" msprop:Generator_RowDeletedName="v_tandem_certificateRowDeleted" msprop:Generator_UserTableName="v_tandem_certificate" msprop:Generator_RowChangedName="v_tandem_certificateRowChanged" msprop:Generator_RowEvArgName="v_tandem_certificateRowChangeEvent" msprop:Generator_RowClassName="v_tandem_certificateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idtandem" msprop:Generator_ColumnVarNameInTable="columnidtandem" msprop:Generator_ColumnPropNameInRow="idtandem" msprop:Generator_ColumnPropNameInTable="idtandemColumn" msprop:Generator_UserColumnName="idtandem" type="xs:int" minOccurs="0" />
+              <xs:element name="lastname" msprop:Generator_ColumnVarNameInTable="columnlastname" msprop:Generator_ColumnPropNameInRow="lastname" msprop:Generator_ColumnPropNameInTable="lastnameColumn" msprop:Generator_UserColumnName="lastname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tandemup" msprop:Generator_ColumnVarNameInTable="columntandemup" msprop:Generator_ColumnPropNameInRow="tandemup" msprop:Generator_ColumnPropNameInTable="tandemupColumn" msprop:Generator_UserColumnName="tandemup" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idjumper" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnidjumper" msprop:Generator_ColumnPropNameInRow="idjumper" msprop:Generator_ColumnPropNameInTable="idjumperColumn" msprop:Generator_UserColumnName="idjumper" type="xs:int" minOccurs="0" />
+              <xs:element name="instructor" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columninstructor" msprop:Generator_ColumnPropNameInRow="instructor" msprop:Generator_ColumnPropNameInTable="instructorColumn" msprop:Generator_UserColumnName="instructor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codegroup" msprop:Generator_ColumnVarNameInTable="columncodegroup" msprop:Generator_ColumnPropNameInRow="codegroup" msprop:Generator_ColumnPropNameInTable="codegroupColumn" msprop:Generator_UserColumnName="codegroup">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
